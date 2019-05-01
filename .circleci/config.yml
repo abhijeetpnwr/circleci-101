@@ -14,5 +14,9 @@ jobs:
           command: date
       
       - run:
-          name: Build Python Package
-          command: python setup.py install --single-version-externally-managed --record=/tmp/record.txt
+          name: Download Conda
+          command: curl -O https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh
+          
+      - run:
+          name: Install Conda
+          command: bash Anaconda3-5.0.1-Linux-x86_64.sh
