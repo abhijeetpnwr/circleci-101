@@ -4,6 +4,7 @@ jobs:
     docker:
       - image: centos
     steps:
+    
       - checkout
 
       - run:
@@ -13,3 +14,6 @@ jobs:
       - run:
           name: Print the Current Time
           command: date
+      -run
+        name: Build Python Package
+        command: python setup.py install --single-version-externally-managed --record=/tmp/record.txt
