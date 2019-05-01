@@ -14,5 +14,5 @@ jobs:
           command: date
       
       - run:
-        name: Build Python Package
-        command: python setup.py install --single-version-externally-managed --record=/tmp/record.txt
+          name: Build Python Package
+          command: python setup.py install --single-version-externally-managed --record=/tmp/record.txt
