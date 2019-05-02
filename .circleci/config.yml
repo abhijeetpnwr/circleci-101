@@ -19,5 +19,5 @@ jobs:
           
       - run:
           name: Install BWA
-          command: ls /opt/
+          command: ls /opt/conda/
           
