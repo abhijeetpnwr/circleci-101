@@ -17,3 +17,7 @@ jobs:
           name: Download Conda
           command: curl -O https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh
           
+      - run:
+          name: Install BWA
+          command: conda install bwa
+          
