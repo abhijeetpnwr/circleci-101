@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: centos
+      - image: bioconda/bioconda-utils-build-env
     steps:
 
       - run:
@@ -17,6 +17,3 @@ jobs:
           name: Download Conda
           command: curl -O https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh
           
-      - run:
-          name: Install Conda
-          command: bash Anaconda3-5.0.1-Linux-x86_64.sh
