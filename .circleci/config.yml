@@ -19,5 +19,5 @@ jobs:
           
       - run:
           name: Install BWA
-          command: /opt/conda/condabin/conda --help
+          command: /opt/conda/condabin/conda install bwa
           
