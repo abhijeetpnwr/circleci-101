@@ -1,5 +1,5 @@
 version: 2		 package:
- jobs:		   name: blast-plus
+ jobs:		 
    build:		
      docker:		
        - image: bioconda/bioconda-utils-build-env		
