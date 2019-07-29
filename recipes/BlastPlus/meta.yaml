@@ -24,6 +24,6 @@ test:
     - makeblastdb.exe -help            # [win64]
 
 about:
-  summary: BLAST finds regions of similarity between biological sequences.
+  summary: BLASTT finds regions of similarity between biological sequences.
   home: http://blast.ncbi.nlm.nih.gov/
   license: Public Domain
