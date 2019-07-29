@@ -1,26 +1,10 @@
-version: 2	
- package:
+version: 2		 package:
  jobs:		   name: blast-plus
    build:		   version: "2.2.31"
      docker:		
        - image: bioconda/bioconda-utils-build-env		
      steps:
-      - run:		 # These are compiled binaries. The true source is 
+     - run:		 # These are compiled binaries. The true source is 
            name: Greeting		 # ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.2.31/ncbi-blast-2.2.31+-src.tar.gz 
            command: echo Hello, world.
-           
-       - run:		 
-          build:
-           name: Print the Current Time		   number: 0
-           command: date		
-        		 test:
-       - run:		   
-         commands:
-           name: Download Conda		     - makeblastdb -help                # [osx or linux64]
-           command: curl -O https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh		     - makeblastdb.exe -help            # [win64]
-           		
-        - run:		 
-          about:
-           name: Install BWA		   summary: BLAST finds regions of similarity between biological sequences.
-           command: pwd && ls && sh ../../recipes/BlastPlus/build.sh		   home: http://blast.ncbi.nlm.nih.gov/
            
