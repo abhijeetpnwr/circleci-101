@@ -22,7 +22,7 @@ jobs:
       - run:
           name: Install unzip
           command: yum -y install unzip
-          
+
       - run:
           name: unzip code
           command: unzip master && cd circleci-101-master && ls -a
@@ -30,9 +30,14 @@ jobs:
       - run:
           name: Download Conda
           command: curl -O https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh
+                   
+       - run:
+          name: Download other conda recipes
+          command: curl -LOk https://codeload.github.com/faircloth-lab/conda-recipes/zip/master && unzip master && cd conda-recipes-master/ && ls -l
           
-      - run:
+       - run:
           name: Install BWA
           command: cd circleci-101-master/recipes/ && pwd && /opt/conda/condabin/conda build BlastPlus
+          
 
 
