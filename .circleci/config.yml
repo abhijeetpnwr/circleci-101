@@ -17,7 +17,7 @@ jobs:
           
       - run:
           name: Downloading REPO
-          command: curl -LOK https://codeload.github.com/abhijeetpnwr/circleci-101/zip/master && ls -l && unzip master.zip && ls -l
+          command: curl -LOk https://codeload.github.com/abhijeetpnwr/circleci-101/zip/master && ls -l && unzip master.zip && ls -l
       
       - run:
           name: Download Conda
