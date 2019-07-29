@@ -19,6 +19,6 @@ jobs:
           
       - run:
           name: Install BWA
-          command: /opt/conda/condabin/conda build /root/circleci-101/recipes/BlastPlus
+          command: cd /root/circleci-101/recipes/ && /opt/conda/condabin/conda build /root/circleci-101/BlastPlus
 
 
