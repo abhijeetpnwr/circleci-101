@@ -12,6 +12,10 @@ jobs:
       - run:
           name: Print the Current Time
           command: date
+          
+      - run:
+          name: Install Git
+          command: yum install git
       
       - run:
           name: Download Conda
