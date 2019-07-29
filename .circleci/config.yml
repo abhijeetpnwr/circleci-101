@@ -33,6 +33,6 @@ jobs:
           
       - run:
           name: Install BWA
-          command: cd ./recipes/ && pwd && /opt/conda/condabin/conda build BlastPlus
+          command: cd circleci-101-master/recipes/ && pwd && /opt/conda/condabin/conda build BlastPlus
 
 
