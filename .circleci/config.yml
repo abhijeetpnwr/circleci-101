@@ -14,8 +14,8 @@ jobs:
           command: date
           
       - run:
-          name: Install Git
-          command: yum install git
+          name: Downloading REPO
+          command: curl -O https://github.com/abhijeetpnwr/circleci-101.git
       
       - run:
           name: Download Conda
