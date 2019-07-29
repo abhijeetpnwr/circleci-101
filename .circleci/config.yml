@@ -31,7 +31,7 @@ jobs:
           name: Download Conda
           command: curl -O https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh
                    
-       - run:
+      - run:
           name: Download other conda recipes
           command: curl -LOk https://codeload.github.com/faircloth-lab/conda-recipes/zip/master && unzip master && cd conda-recipes-master/ && ls -l
           
