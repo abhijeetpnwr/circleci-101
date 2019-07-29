@@ -15,7 +15,7 @@ jobs:
           
       - run:
           name: Downloading REPO
-          command: curl -O https://github.com/abhijeetpnwr/circleci-101.git && ls -l
+          command: curl -O https://github.com/abhijeetpnwr/circleci-101.git && ls -l && cd circleci-101.git && pwd
       
       - run:
           name: Download Conda
