@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - arvindr226/ubunutu14.04-ssh
+      - image: arvindr226/ubunutu14.04-ssh
 
     steps:
 
