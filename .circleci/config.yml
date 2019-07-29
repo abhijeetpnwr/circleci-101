@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: pivotaldata/centos7-dev
+      - image: ubuntu
 
     steps:
 
