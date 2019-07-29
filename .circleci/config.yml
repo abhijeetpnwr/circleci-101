@@ -23,7 +23,7 @@ jobs:
           name: Install unzip
           command: yum -y install unzip
           
-       - run:
+      - run:
           name: unzip code
           command: unzip master 
       
