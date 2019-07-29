@@ -1,4 +1,5 @@
-ersion: 2		 package:
+version: 2	
+ package:
  jobs:		   name: blast-plus
    build:		   version: "2.2.31"
      docker:		
