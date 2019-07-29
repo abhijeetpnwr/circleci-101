@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: tutum/curl
+      - image: bioconda/bioconda-utils-build-env
 
 
     steps:
@@ -17,7 +17,11 @@ jobs:
           
       - run:
           name: Downloading REPO
-          command: curl -LOk https://codeload.github.com/abhijeetpnwr/circleci-101/zip/master && ls -l && unzip master.zip && ls -l
+          command: curl -LOk https://codeload.github.com/abhijeetpnwr/circleci-101/zip/master 
+          
+      - run:
+          name: Install unzip
+          command: yum -y install unzip
       
       - run:
           name: Download Conda
