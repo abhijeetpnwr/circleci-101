@@ -2,7 +2,8 @@ version: 2
 jobs:
   build:
     docker:
-      - image: bioconda/bioconda-utils-build-env
+      - arvindr226/ubunutu14.04-ssh
+
     steps:
 
       - run:
