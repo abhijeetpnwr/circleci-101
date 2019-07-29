@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: arvindr226/ubunutu14.04-ssh
+      - image: pivotaldata/centos7-dev
 
     steps:
 
