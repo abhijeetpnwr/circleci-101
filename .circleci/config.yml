@@ -1,7 +1,7 @@
 version: 2		 
- jobs:		 
-   build:		
-     docker:		
+ jobs:
+   build:
+     docker:	
        - image: bioconda/bioconda-utils-build-env		
      steps:
      - run:		 # These are compiled binaries. The true source is 
