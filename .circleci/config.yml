@@ -20,7 +20,7 @@ jobs:
           command: curl -LOk https://codeload.github.com/abhijeetpnwr/circleci-101/zip/master 
           
       - run:
-          name: Install unzip
+          name: Installl unzip
           command: yum -y install unzip
 
       - run:
