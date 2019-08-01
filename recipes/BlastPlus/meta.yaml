@@ -20,7 +20,7 @@ build:
 
 test:
   commands:
-    - makeblastdb -help                # [osx or linux64]
+    - makeblastdb -n -help                # [osx or linux64]
     - makeblastdb.exe -help            # [win64]
 
 about:
